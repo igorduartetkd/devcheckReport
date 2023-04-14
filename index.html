@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Avaliação do DevCheck</title>
+    <link rel="stylesheet" href="src/style/style.css"/>
+</head>
+<body>
+<div class="table-container">
+    <h1>DevCheck</h1>
+    <form id="form">
+        <div class="combos-radios">
+            <table class="radio-table">
+                <tr class="radio-row">
+                    <th class="radio-cell" rowspan="2"><h1>Avaliação do código</h1></th>
+                    <th class="radio-cell-text" colspan="3"><h2>Nível de qualidade</h2></th>
+                </tr>
+                <tr class="radio-row">
+                    <th class="radio-cell-text">Baixo</th>
+                    <th class="radio-cell-text">Médio</th>
+                    <th class="radio-cell-text">Alto</th>
+                </tr>
+                <tr class="radio-row">
+                    <td class="radio-cell">Legibilidade</td>
+
+                    <td class="radio-cell">
+                        <input
+                                type="radio"
+                                name="legibilidade"
+                                value="baixo"
+                                class="legibilidade"
+                                required
+                        />
+                    </td>
+                    <td class="radio-cell">
+                        <input
+                                type="radio"
+                                name="legibilidade"
+                                value="medio"
+                                class="legibilidade"
+                        />
+                    </td>
+                    <td class="radio-cell">
+                        <input
+                                type="radio"
+                                name="legibilidade"
+                                value="alto"
+                                class="legibilidade"
+                        />
+                    </td>
+                </tr>
+                <tr class="radio-row">
+                    <td class="radio-cell">Manutenibilidade</td>
+                    <td class="radio-cell">
+                        <input
+                                type="radio"
+                                name="manutenibilidade"
+                                value="baixo"
+                                class="manutenibilidade"
+                                required
+                        />
+                    </td>
+                    <td class="radio-cell">
+                        <input
+                                type="radio"
+                                name="manutenibilidade"
+                                value="medio"
+                                class="manutenibilidade"
+                        />
+                    </td>
+                    <td class="radio-cell">
+                        <input
+                                type="radio"
+                                name="manutenibilidade"
+                                value="alto"
+                                class="manutenibilidade"
+                        />
+                    </td>
+                </tr>
+                <tr class="radio-row">
+                    <td class="radio-cell">Conformidade</td>
+                    <td class="radio-cell">
+                        <input
+                                type="radio"
+                                name="conformidade"
+                                value="baixo"
+                                class="conformidade"
+                                required
+                        />
+                    </td>
+                    <td class="radio-cell">
+                        <input
+                                type="radio"
+                                name="conformidade"
+                                value="medio"
+                                class="conformidade"
+                        />
+                    </td>
+                    <td class="radio-cell">
+                        <input
+                                type="radio"
+                                name="conformidade"
+                                value="alto"
+                                class="conformidade"
+                        />
+                    </td>
+                </tr>
+                <tr class="radio-row">
+                    <td class="radio-cell">Eficiência</td>
+                    <td class="radio-cell">
+                        <input
+                                type="radio"
+                                name="eficiencia"
+                                value="baixo"
+                                class="eficiencia"
+                                required
+                        />
+                    </td>
+                    <td class="radio-cell">
+                        <input
+                                type="radio"
+                                name="eficiencia"
+                                value="medio"
+                                class="eficiencia"
+                        />
+                    </td>
+                    <td class="radio-cell">
+                        <input
+                                type="radio"
+                                name="eficiencia"
+                                value="alto"
+                                class="eficiencia"
+                        />
+                    </td>
+                </tr>
+                <tr class="radio-row">
+                    <td class="radio-cell">Confiabilidade</td>
+                    <td class="radio-cell">
+                        <input
+                                type="radio"
+                                name="confiabilidade"
+                                value="baixo"
+                                class="confiabilidade"
+                                required
+                        />
+                    </td>
+                    <td class="radio-cell">
+                        <input
+                                type="radio"
+                                name="confiabilidade"
+                                value="medio"
+                                class="confiabilidade"
+                        />
+                    </td>
+                    <td class="radio-cell">
+                        <input
+                                type="radio"
+                                name="confiabilidade"
+                                value="alto"
+                                class="confiabilidade"
+                        />
+                    </td>
+                </tr>
+            </table>
+            <div class="combos">
+                <table class="combo-table">
+                    <tr class="combo-row">
+                        <th class="select">
+                            <label for="resultado"> Finalizado com:</label>
+                            <select name="resultado" id="resultado" required>
+                                <option value="">Selecione uma opção</option>
+                                <option value="sucesso">Sucesso</option>
+                                <option value="falha">Falha</option>
+                            </select>
+                        </th>
+                    </tr>
+                </table>
+                <table class="combo-table">
+                    <tr class="combo-row">
+                        <th class="select">
+                            <label for="analise"> Tipo de analise:</label>
+                            <select name="analise" id="analise" required>
+                                <option value="">Selecione uma opção</option>
+                                <option value="detalhada">Detalhada</option>
+                                <option value="superficial">Superficial</option>
+                            </select>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="segunda-linha">
+            <table class="radio-table">
+                <tr class="radio-row">
+                    <th class="radio-cell-title">
+                        <h1>Revisão do report do desenvolvedor:</h1>
+                    </th>
+                </tr>
+                <tr class="radio-row">
+                    <td class="text-area">
+              <textarea
+                      name="revisao"
+                      id="revisao"
+                      rows="5"
+                      placeholder="Digite aqui seu texto"
+                      required
+              ></textarea>
+                    </td>
+                </tr>
+            </table>
+            <table class="radio-table">
+                <tr class="radio-row">
+                    <th class="radio-cell-title">
+                        <h1>Análise de riscos:</h1>
+                    </th>
+                </tr>
+                <tr class="radio-row">
+                    <td class="text-area">
+              <textarea
+                      name="riscos"
+                      id="riscos"
+                      rows="5"
+                      placeholder="Digite aqui seu texto"
+                      required
+              ></textarea>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <table class="radio-table">
+
+            <tr class="radio-row">
+                <th class="radio-cell-title">
+                    <h1>Problemas encontrados:</h1>
+                </th>
+            </tr>
+            <tr class="radio-row">
+                <td class="text-area">
+              <textarea
+                      name="problemas"
+                      id="problemas"
+                      rows="5"
+                      placeholder="Digite aqui seu texto"
+                      required
+              ></textarea>
+                </td>
+            </tr>
+        </table>
+        <div class="terceira-linha">
+            <table class="radio-table">
+                <tr class="radio-row">
+                    <th class="radio-cell-title">
+                        <h1>Recomendações para um próximo ticket</h1>
+                    </th>
+                </tr>
+                <tr class="radio-row">
+                    <td class="text-area">
+              <textarea
+                      name="recomendacoes"
+                      id="recomendacoes"
+                      rows="5"
+                      placeholder="Digite aqui seu texto"
+                      required
+              ></textarea>
+                    </td>
+                </tr>
+            </table>
+            <table class="radio-table">
+                <tr class="radio-row">
+                    <th class="radio-cell-title">
+                        <h1>Recomendações para QA:</h1>
+                    </th>
+                </tr>
+                <tr class="radio-row">
+                    <td class="text-area">
+              <textarea
+                      name="qa"
+                      id="qa"
+                      rows="5"
+                      placeholder="Digite aqui seu texto"
+                      required
+              ></textarea>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="button-container">
+            <button type="submit" id="generate" form="form">Gerar</button>
+            <button type="button" id="clear" form="form">Limpar</button>
+        </div>
+    </form>
+</div>
+<div id="result" class="result"></div>
+
+<script src="src/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+h1 {
+    margin: auto;
+    margin-top: 10px;
+}
+
+.combos-radios {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.combos {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.segunda-linha {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.terceira-linha {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.radio-table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 5px;
+}
+
+.combo-table {
+    display: table;
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 5px;
+}
+
+.radio-row {
+    display: table-row;
+}
+
+.combo-row {
+    display: table-row;
+}
+
+.radio-row textarea {
+    width: 400px;
+}
+
+#problemas {
+    width: 810px;
+    height: 260px;
+}
+
+.container-text-area {
+    display: flex;
+    width: 100%;
+}
+
+.row-text-area {
+    width: 100%;
+    display: flex;
+}
+
+.radio-cell {
+    display: table-cell;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.radio-cell h2 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.radio-cell-text {
+    display: table-cell;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.radio-cell-title {
+    display: table-cell;
+    text-align: left;
+    font-size: 12px;
+}
+
+.radio-cell-title h1 {
+    font-size: 14px;
+}
+
+.select {
+    display: table-cell;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.select select {
+    outline: 1px solid #3e8e41;
+    border-radius: 2px;
+    margin-left: 10px;
+    width: 160px;
+    padding: 3px;
+}
+
+.text-area {
+    display: table-cell;
+    text-align: left;
+    font-size: 16px;
+}
+
+.radio-select select {
+    margin-left: 10px;
+    width: 150px;
+}
+
+.radio-cell h1 {
+    font-size: 1em;
+}
+
+.radio-cell label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.radio-cell input[type="radio"] {
+    display: block;
+    margin: 0 auto;
+}
+
+textarea {
+    border-radius: 5px;
+}
+
+textarea:focus {
+    outline: 2px solid #3e8e41;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+
+}
+
+.button-container button {
+    border: none;
+    color: white;
+    padding: 0.5em 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0.5em;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 5px;
+}
+
+#generate {
+    background-color: #4caf50;
+}
+
+#clear {
+    background-color: red;
+}
+
+.button-container button:hover {
+    background-color: #3e8e41;
+}
+
+.button-container button:active {
+    background-color: #2e6735;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    flex-direction: column;
+}
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #00000094;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-report {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+}
+
+.btnClose {
+    width: 50px;
+    background: transparent;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    color: #2e6735;
+    font-size: 14px;
+}
+
+.btnClose:hover {
+    font-weight: bold;
+}
+
